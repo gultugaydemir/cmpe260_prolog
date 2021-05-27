@@ -279,19 +279,3 @@ find_my_best_match(Name,Distances,ActivityList,CityList,Targets):-
     setof(Distance-Target-Act-City, r_find_my_best_match(Name,Target,Distance,City,Act), Set),
     sort(1, @=<, Set, Sorted),
     tuples_values(Sorted,Distances,Targets,ActivityList,CityList).
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
